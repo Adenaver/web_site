@@ -10,21 +10,20 @@ a{
 a:hover{
     text-decoration: none;
 }
-
+section:after, footer:after { content: ""; clear: both; height: 0; display: block; }
+.show-cell { display: table-cell !important; }
 .header{
   background: #1a1915 url(images/fon.png) no-repeat center;
   background-size: cover;
+  width: 910px;
   height: 700px;
   color: #fff;
   width: 100%;
    margin: 0;
 }
-.conteiner{
-  width: 940px;
-   box-sizing: border-box;
-  margin: 0 auto;
-  border: 1px solid red;
-}
+.clearfix { clear: both; }
+.container { width: 940px; margin: 0 auto; box-sizing: border-box; }
+.steps { padding-top: 95px; width: 940px; }
 #name{
   font: bold 20px/36px "Montserrat";
   float: left;
@@ -60,7 +59,6 @@ a:hover{
 .middle{
 	text-align: center; 
 	margin-top: 179px;
-	display: inline-block;
 }
 #middle-text-1{
 	width: 500px; 
@@ -86,12 +84,21 @@ a:hover{
 	color: #fff;
 }
 #middle-button:hover { color: #333333; }
-.steps{
-	padding-top: 95px;
-}
-#steps-3{
-	color: #1a1915; 
-	margin: 0 0 32px 0; 
-	font: bold 22px "Montserrat"; 
-	text-align: center;
-}
+.steps__h3 { color: #1a1915; margin: 0 0 32px 0; font: bold 22px "Montserrat"; text-align: center; }
+.steps__blocks__info { height: 174px; display: table-cell; vertical-align: bottom; display: none; }
+.steps__blocks { width: 300px; height: 400px; float: left; background-color: #ff8523; margin-right: 20px; border-radius: 4px; padding: 0 20px; box-sizing: border-box; color: #fff; background-position: center; overflow: hidden; }
+.steps__blocks:last-child { margin-right: 0; }
+.red-table { width: 70px; height: 20px; border-radius: 10px; background-color: #ff4e50; font: 10px/21px "Montserrat"; text-transform: uppercase; cursor: default; box-sizing: border-box; padding: 0 14px; margin-bottom: 17px; text-align: center; letter-spacing: 1px; }
+.steps__blocks__info { height: 174px; display: table-cell; vertical-align: bottom; display: none; }
+.info__title { font: bold 24px/27px "Montserrat"; }
+
+.steps__blocks__left__arrow, .steps__blocks__right__arrow { width: 30px; height: 55px; display: inline-block; cursor: pointer; }
+.steps__blocks__arrows { margin-top: 153px;}
+.steps__blocks__left__arrow, .steps__blocks__right__arrow { background: url(images/sprite.png); }
+.steps__blocks__left__arrow { background-position: 0 68px; float: left; }
+
+.steps__blocks__right__arrow { background-position: 31px 68px; float: right; }
+.step1 { background-image: url(images/block1.png); }
+.step2 { background-image: url(images/block2.png); }
+.step3 { background-image: url(images/block3.png); }
+.info__desription { color: #acaaa8; display: block; line-height: 17px; margin-top: 10px; }

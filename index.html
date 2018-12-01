@@ -4,6 +4,7 @@
     <meta  name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="normalize.css">
 
     <script src="jquery-3.3.1.min.js"></script>
 
@@ -12,7 +13,7 @@
   </head>
   <body>
     <div class="header">
-      <div class="conteiner">
+      <div class="container">
         <div class="top">
                   <a href="#" id="name">URLAUBSGLÜCK</a>
                   <a href="#" id="sign">Sign up</a>
@@ -26,11 +27,54 @@
 		</div>
       </div>
 	</div>
-	  <div class="steps">
-			<h3 id="steps-3">How Urlaubsglück works?</h3>
-	  </div>
-
-
+	  <div class="container">
+			<section class="steps">
+				<h3 class="steps__h3">How Urlaubsglück works?</h3>
+				<div class="steps__blocks step1"> <!-- Перший .steps__block -->
+					<div class="steps__blocks__arrows" id="arrows__b1">
+						<span class="steps__blocks__left__arrow"></span>
+						<span class="steps__blocks__right__arrow"></span>
+					</div>
+					<div class="clearfix"></div>
+					<div class="steps__blocks__info show-cell" id="2block__info1"> <!-- 1 Слайд -->
+						<div class="red-table">Step 1</div>
+						<span class="info__title">Sed leo enim, condimentum</span>
+						<span class="info__desription">
+							Quisque libero libero, dictum non turpis in, luctus semper lorem. Donec rhoncus a leo sit amet facilisis.
+						</span>
+					</div>
+			</div>
+			<div class="steps__blocks step2"> <!-- Другий .steps__block -->
+					<div class="steps__blocks__arrows" id="arrows__b2">
+						<span class="steps__blocks__left__arrow"></span>
+						<span class="steps__blocks__right__arrow"></span>
+					</div>
+				<div class="clearfix"></div>
+				<div class="steps__blocks__info show-cell" id="2block__info1"> <!-- 1 Слайд -->
+					<div class="red-table">Step 2</div>
+					<span class="info__title">Morbi velit risus</span>
+					<span class="info__desription">
+						Nulla venenatis tempor dui in molestie. Nulla quis dictum purus, sit amet porttitor est.
+					</span>
+				
+				</div>
+			</div>
+			<div class="steps__blocks step3"> <!-- Третій .steps__block -->
+					<div class="steps__blocks__arrows" id="arrows__b3">
+						<span class="steps__blocks__left__arrow"></span>
+						<span class="steps__blocks__right__arrow"></span>
+					</div>
+					<div class="clearfix"></div>
+					<div class="steps__blocks__info show-cell" id="3block__info1"> <!-- 1 Слайд -->
+						<div class="red-table">Step 3</div>
+						<span class="info__title">Sed leo enim, condimentum</span>
+						<span class="info__desription">
+							Quisque libero libero, dictum non turpis in, luctus semper lorem. Donec rhoncus a leo sit amet facilisis.
+						</span>
+					</div>
+			</div>
+		</div>
+		<section class="peoples">
 
 
 
